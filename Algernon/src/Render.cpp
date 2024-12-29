@@ -1,17 +1,25 @@
 ﻿// Render.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
+#include "Al_app.hpp"
+
+#include <cstdlib>
 #include <iostream>
-#include <SDL.h>
+#include <stdexcept>
 
 int main(int argc, char* argv[])
 {
-    if (SDL_Init(SDL_INIT_VIDEO) < 0)
-    {
-        return -1;
+    Algernon::ALapp app;
+
+    try {
+        app.run();
+    }
+    catch(const std::exception &e){
+        std::cerr << e.what() << '\n';
+        return EXIT_FAILURE;
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
