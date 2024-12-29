@@ -2,10 +2,16 @@
 //
 
 #include <iostream>
+#include <SDL.h>
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "Hello World!\n";
+    if (SDL_Init(SDL_INIT_VIDEO) < 0)
+    {
+        return -1;
+    }
+
+    return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
