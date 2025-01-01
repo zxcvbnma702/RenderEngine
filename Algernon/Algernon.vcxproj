@@ -138,12 +138,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Al_app.cpp" />
+    <ClCompile Include="src\Al_pipeline.cpp" />
     <ClCompile Include="src\Al_winodw.cpp" />
     <ClCompile Include="src\Render.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Al_app.hpp" />
+    <ClInclude Include="src\Al_pipeline.hpp" />
     <ClInclude Include="src\Al_window.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\shaders\shader.frag" />
+    <None Include="src\shaders\shader.frag.spv" />
+    <None Include="src\shaders\shader.vert" />
+    <None Include="src\shaders\shader.vert.spv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

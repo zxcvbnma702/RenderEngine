@@ -4,9 +4,17 @@
     <ClCompile Include="src\Render.cpp" />
     <ClCompile Include="src\Al_app.cpp" />
     <ClCompile Include="src\Al_winodw.cpp" />
+    <ClCompile Include="src\Al_pipeline.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Al_app.hpp" />
     <ClInclude Include="src\Al_window.hpp" />
+    <ClInclude Include="src\Al_pipeline.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\shaders\shader.vert" />
+    <None Include="src\shaders\shader.frag" />
+    <None Include="src\shaders\shader.frag.spv" />
+    <None Include="src\shaders\shader.vert.spv" />
   </ItemGroup>
 </Project>

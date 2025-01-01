@@ -5,7 +5,6 @@
 #include <vector>
 
 namespace Algernon {
-
 	class ALwindow {
 	public:
 		SDL_Window* window;
